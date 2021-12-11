@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import Home from "./components/Home";
 
 import "./App.css";
+import Details from "./components/Details";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
           <Route path="/home">
             <Home />
           </Route>
+          <Route path="/detail/:title" children={<Details />}></Route>
         </Switch>
       </Router>
     </div>
