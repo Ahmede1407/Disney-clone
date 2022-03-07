@@ -17,6 +17,7 @@ const Details = () => {
       if (movie.title === title) {
         setSelectedMovie(movie);
       }
+      return null;
     });
   }, [title]);
 
